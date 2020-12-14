@@ -47,3 +47,14 @@
   background: rgba(41, 98, 255, 0.1);
   border-radius: 6px;
 }
+
+.disabledShadowBtn {
+  background: #3d5afe;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.disabledShadowBtn:hover,
+.disabledShadowBtn:focus {
+  background: #3d5afe;
+}
