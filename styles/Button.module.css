@@ -3,6 +3,7 @@
   font-weight: var(--fw-medium);
   font-size: var(--fs-btn-text);
   padding: 0.5rem 1rem;
+  color: #3f3f3f;
   background-color: #e0e0e0;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
@@ -12,4 +13,11 @@
 .button-label {
   font-weight: var(--fw-regular);
   font-size: var(--fs-btn-label);
+}
+
+.outline {
+  color: #3d5afe;
+  background-color: #ffffff;
+  border: 1px solid #3d5afe;
+  box-shadow: none;
 }
