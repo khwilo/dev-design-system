@@ -14,7 +14,8 @@
 }
 
 html,
-body {
+body,
+h1 {
   padding: 0;
   margin: 0;
 }
@@ -22,4 +23,34 @@ body {
 body {
   line-height: 1.5;
   font-family: 'Ubuntu Mono', monospace;
+}
+
+.wrapper {
+  padding: 1rem;
+}
+
+.flow > * + * {
+  margin-top: 1.5rem;
+}
+
+.section-heading1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-title);
+}
+
+.button {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-btn-text);
+  padding: 0.5rem 1rem;
+  background-color: #e0e0e0;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+}
+
+.button-label {
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-btn-label);
 }
