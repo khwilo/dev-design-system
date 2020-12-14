@@ -11,8 +11,8 @@ const Button = ({
   return (
     <button
       className={`${styles.button} ${variant ? styles[variant] : ''} ${
-        disabledShadow ? styles.disabledShadowBtn : ''
-      } ${disabled ? styles.disabledBtn : ''} ${
+        disabledShadow ? styles.disabledShadow : ''
+      } ${disabled ? styles.disabled : ''} ${
         startIcon || endIcon ? styles.iconBtnWrapper : ''
       }
       `}
