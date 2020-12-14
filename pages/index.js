@@ -90,6 +90,10 @@ export default function Home() {
             <h3 className='btn-label'>{`<Button color="secondary" />`}</h3>
             <Button title='Default' color='secondary' />
           </div>
+          <div>
+            <h3 className='btn-label'>{`<Button color="danger" />`}</h3>
+            <Button title='Default' color='danger' />
+          </div>
         </div>
       </section>
     </div>
