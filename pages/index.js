@@ -61,6 +61,21 @@ export default function Home() {
             <Button title='Default' endIcon='local_grocery_store' />
           </div>
         </div>
+
+        <div className='section__btn flex'>
+          <div>
+            <h3 className='btn-label'>{`<Button size="sm" />`}</h3>
+            <Button title='Default' size='sm' />
+          </div>
+          <div>
+            <h3 className='btn-label'>{`<Button size="md" />`}</h3>
+            <Button title='Default' size='md' />
+          </div>
+          <div>
+            <h3 className='btn-label'>{`<Button size="lg" />`}</h3>
+            <Button title='Default' size='lg' />
+          </div>
+        </div>
       </section>
     </div>
   );
