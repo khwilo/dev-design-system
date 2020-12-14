@@ -28,7 +28,7 @@ export default function Home() {
 
         <div className='section__btn flex'>
           <div>
-            <h3 className='btn-label'>{`<Button variant='text' />`}</h3>
+            <h3 className='btn-label'>{`<Button variant="text" />`}</h3>
             <Button title='Default' variant='text' />
           </div>
         </div>
@@ -37,6 +37,17 @@ export default function Home() {
           <div>
             <h3 className='btn-label'>{`<Button disableShadow />`}</h3>
             <Button title='Default' disabledShadow />
+          </div>
+        </div>
+
+        <div className='section__btn flex'>
+          <div>
+            <h3 className='btn-label'>{`<Button disabled />`}</h3>
+            <Button title='Default' disabled />
+          </div>
+          <div>
+            <h3 className='btn-label'>{`<Button variant="text" disabled />`}</h3>
+            <Button title='Default' variant='text' disabled />
           </div>
         </div>
       </section>
