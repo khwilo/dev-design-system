@@ -14,7 +14,7 @@ export default function Home() {
 
         <div className='section__btn flex'>
           <div>
-            <h3 className='button-label'>{`<Button />`}</h3>
+            <h3 className='btn-label'>{`<Button />`}</h3>
             <Button title='Default' />
           </div>
         </div>
