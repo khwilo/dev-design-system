@@ -50,6 +50,17 @@ export default function Home() {
             <Button title='Default' variant='text' disabled />
           </div>
         </div>
+
+        <div className='section__btn flex'>
+          <div>
+            <h3 className='btn-label'>{`<Button startIcon="local_grocery_store" />`}</h3>
+            <Button title='Default' startIcon='local_grocery_store' />
+          </div>
+          <div>
+            <h3 className='btn-label'>{`<Button endIcon="local_grocery_store" />`}</h3>
+            <Button title='Default' endIcon='local_grocery_store' />
+          </div>
+        </div>
       </section>
     </div>
   );

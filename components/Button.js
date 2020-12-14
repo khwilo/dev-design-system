@@ -2,18 +2,34 @@ import styles from '../styles/Button.module.css';
 
 const Button = ({
   title,
-  variant = '',
+  variant,
+  startIcon,
+  endIcon,
   disabledShadow = false,
   disabled = false,
 }) => {
-  const disabledShadowBtn = disabledShadow ? 'disabledShadowBtn' : '';
-  const disabledBtn = disabled ? 'disabledBtn' : '';
-
   return (
     <button
-      className={`${styles.button} ${styles[variant]} ${styles[disabledShadowBtn]} ${styles[disabledBtn]}`}
+      className={`${styles.button} ${variant ? styles[variant] : ''} ${
+        disabledShadow ? styles.disabledShadowBtn : ''
+      } ${disabled ? styles.disabledBtn : ''} ${
+        startIcon || endIcon ? styles.iconBtnWrapper : ''
+      }
+      `}
     >
-      {title}
+      {startIcon ? (
+        <div className={styles.iconBtn}>
+          <img src='assets/images/add_shopping_cart.svg' alt='' />
+          <span>{title}</span>
+        </div>
+      ) : endIcon ? (
+        <div className={styles.iconBtn}>
+          <span>{title}</span>
+          <img src='assets/images/add_shopping_cart.svg' alt='' />
+        </div>
+      ) : (
+        <>{title}</>
+      )}
     </button>
   );
 };
