@@ -21,3 +21,11 @@
   border: 1px solid #3d5afe;
   box-shadow: none;
 }
+
+.text {
+  border: none;
+  box-shadow: none;
+  background-color: #ffffff;
+  color: #3d5afe;
+  padding: 0;
+}

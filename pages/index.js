@@ -25,6 +25,13 @@ export default function Home() {
             <Button title='Default' variant='outline' />
           </div>
         </div>
+
+        <div className='section__btn flex'>
+          <div>
+            <h3 className='btn-label'>{`<Button variant='text' />`}</h3>
+            <Button title='Default' variant='text' />
+          </div>
+        </div>
       </section>
     </div>
   );
