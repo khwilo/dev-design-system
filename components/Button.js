@@ -6,6 +6,7 @@ const Button = ({
   startIcon,
   endIcon,
   size,
+  color,
   disabledShadow = false,
   disabled = false,
 }) => {
@@ -15,7 +16,7 @@ const Button = ({
         disabledShadow ? styles.disabledShadow : ''
       } ${disabled ? styles.disabled : ''} ${
         startIcon || endIcon ? styles.iconBtnWrapper : ''
-      } ${size ? styles[size] : ''}
+      } ${size ? styles[size] : ''} ${color ? styles[color] : ''}
       `}
     >
       {startIcon ? (

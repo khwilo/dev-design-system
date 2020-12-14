@@ -76,6 +76,21 @@ export default function Home() {
             <Button title='Default' size='lg' />
           </div>
         </div>
+
+        <div className='section__btn flex'>
+          <div>
+            <h3 className='btn-label'>{`<Button color="default" />`}</h3>
+            <Button title='Default' color='default' />
+          </div>
+          <div>
+            <h3 className='btn-label'>{`<Button color="primary" />`}</h3>
+            <Button title='Default' color='primary' />
+          </div>
+          <div>
+            <h3 className='btn-label'>{`<Button color="secondary" />`}</h3>
+            <Button title='Default' color='secondary' />
+          </div>
+        </div>
       </section>
     </div>
   );

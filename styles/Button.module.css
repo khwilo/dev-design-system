@@ -104,3 +104,30 @@
 .button.lg {
   padding: 1rem 2rem;
 }
+
+.button.primary,
+.button.secondary {
+  color: #ffffff;
+}
+
+.button.primary {
+  background: #2962ff;
+  box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background: #0039cb;
+  box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
+}
+
+.button.secondary {
+  background: #455a64;
+  box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background: #1c313a;
+  box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
+}
