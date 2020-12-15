@@ -1,4 +1,4 @@
-.button {
+.Button {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: var(--fw-medium);
   font-size: var(--fs-btn-text);
@@ -11,29 +11,24 @@
   transition: all 600ms ease-in-out;
 }
 
-.button:hover,
-.button:focus {
+.Button:hover,
+.Button:focus {
   background: #aeaeae;
 }
 
-.button-label {
-  font-weight: var(--fw-regular);
-  font-size: var(--fs-btn-label);
-}
-
-.button.outline {
+.Button___outline {
   color: #3d5afe;
   background-color: #ffffff;
   border: 1px solid #3d5afe;
   box-shadow: none;
 }
 
-.button.outline:hover,
-.button.outline:focus {
+.Button___outline:hover,
+.Button___outline:focus {
   background: rgba(41, 98, 255, 0.1);
 }
 
-.button.text {
+.Button___text {
   border: none;
   box-shadow: none;
   background-color: transparent;
@@ -41,105 +36,115 @@
   padding: 0;
 }
 
-.button.text:hover,
-.button.text:focus {
+.Button___text:hover,
+.Button___text:focus {
   padding: 0.5rem 1rem;
   background: rgba(41, 98, 255, 0.1);
   border-radius: 6px;
 }
 
-.button.disabledShadow {
+.Button___disabledShadow {
   background: #3d5afe;
   color: #ffffff;
   box-shadow: none;
 }
 
-.button.disabled {
+.Button___disabled {
   background: #e0e0e0;
   color: #9e9e9e;
   cursor: not-allowed;
 }
 
-.button.text.disabled {
+.Button___textDisabled {
+  background-color: transparent;
+}
+
+.Button___disabled:focus,
+.Button___disabled:hover {
+  background: #e0e0e0;
+}
+
+.Button___textDisabled:focus,
+.Button___textDisabled:hover {
   background-color: transparent;
   padding: 0;
 }
 
-.button.iconBtnWrapper {
+.Button_iconTitleWrapper {
   background: #2962ff;
   box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
   color: #ffffff;
 }
 
-.iconBtn {
+.Button_iconTitle {
   display: flex;
   align-items: center;
 }
 
-.iconBtn img {
+.Button_iconTitle___img {
   width: 14px;
   height: 14px;
 }
 
-.iconBtn > * + * {
+.Button_iconTitle > * + * {
   margin-left: 0.4rem;
 }
 
-.button.sm,
-.button.md,
-.button.lg {
+.Button___sm,
+.Button___md,
+.Button___lg {
   background: #2962ff;
   color: #ffffff;
   box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
 }
 
-.button.sm {
+.Button___sm {
   padding: 0.25rem 0.5rem;
 }
 
-.button.md {
+.Button___md {
   padding: 0.5rem 1rem;
 }
 
-.button.lg {
+.Button___lg {
   padding: 1rem 2rem;
 }
 
-.button.primary,
-.button.secondary,
-.button.danger {
+.Button___primary,
+.Button___secondary,
+.Button___danger {
   color: #ffffff;
 }
 
-.button.primary {
+.Button___primary {
   background: #2962ff;
   box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
 }
 
-.button.primary:hover,
-.button.primary:focus {
+.Button___primary:hover,
+.Button___primary:focus {
   background: #0039cb;
   box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
 }
 
-.button.secondary {
+.Button___secondary {
   background: #455a64;
   box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.Button___secondary:hover,
+.Button___secondary:focus {
   background: #1c313a;
   box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
 }
 
-.button.danger {
+.Button___danger {
   background: #d32f2f;
   box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
 }
 
-.button.danger:hover,
-.button.danger:focus {
+.Button___danger:hover,
+.Button___danger:focus {
   background: #9a0007;
   box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
 }
