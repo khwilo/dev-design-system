@@ -11,12 +11,18 @@ const Button = ({
   color,
   disabledShadow = false,
   disabled = false,
-  ...rest
+  ...props
 }) => {
   const computedClassNames = cn(styles.Button, {
     [styles.Button___primary]: color === 'primary',
     [styles.Button___secondary]: color === 'secondary',
     [styles.Button___danger]: color === 'danger',
+    [styles.defaultHoverFocus]: props.defaultHoverFocus,
+    [styles.primaryHoverFocus]: props.primaryHoverFocus,
+    [styles.secondaryHoverFocus]: props.secondaryHoverFocus,
+    [styles.dangerHoverFocus]: props.dangerHoverFocus,
+    [styles.primaryOutlineHoverFocus]: props.primaryOutlineHoverFocus,
+    [styles.primaryTextHoverFocus]: props.primaryTextHoverFocus,
     [styles.Button___sm]: size === 'sm',
     [styles.Button___md]: size === 'md',
     [styles.Button___lg]: size === 'lg',
@@ -26,9 +32,6 @@ const Button = ({
     [styles.Button___textBlue]: variant === 'text' && color === 'primary',
     [styles.Button___disabledShadow]: disabledShadow,
     [styles.Button___disabled]: disabled,
-    [styles.defaultHoverFocus]: rest.defaultHoverFocus, // For demo purpose only
-    [styles.primaryOutlineHoverFocus]: rest.primaryOutlineHoverFocus, // For demo purpose only
-    [styles.primaryTextHoverFocus]: rest.primaryTextHoverFocus, // For demo purpose only
   });
 
   return (
