@@ -12,22 +12,22 @@ const Button = ({
   disabled = false,
 }) => {
   const computedClassNames = cn(styles.Button, {
-    [styles.Button___outline]: variant === 'outline',
-    [styles.Button___text]: variant === 'text',
-    [styles.Button___disabledShadow]: disabledShadow,
-    [styles.Button___disabled]: disabled,
-    [styles.Button___textDisabled]: variant === 'text' && disabled,
-    [styles.Button_iconTitleWrapper]: startIcon || endIcon,
-    [styles.Button___sm]: size === 'sm',
-    [styles.Button___md]: size === 'md',
-    [styles.Button___lg]: size === 'lg',
     [styles.Button___primary]: color === 'primary',
     [styles.Button___secondary]: color === 'secondary',
     [styles.Button___danger]: color === 'danger',
+    [styles.Button___sm]: size === 'sm',
+    [styles.Button___md]: size === 'md',
+    [styles.Button___lg]: size === 'lg',
+    [styles.Button___outline]: variant === 'outline',
+    [styles.Button___outlineBlue]: variant === 'outline' && color === 'primary',
+    [styles.Button___text]: variant === 'text',
+    [styles.Button___textBlue]: variant === 'text' && color === 'primary',
+    [styles.Button___disabledShadow]: disabledShadow,
+    [styles.Button___disabled]: disabled,
   });
 
   return (
-    <button className={computedClassNames}>
+    <button className={computedClassNames} disabled={disabled}>
       {startIcon ? (
         <div className={styles.Button_iconTitle}>
           <img

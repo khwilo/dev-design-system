@@ -22,21 +22,21 @@ export default function Home() {
         <div className='section__btn flex'>
           <div>
             <h3 className='btn-label'>{`<Button variant="outline" />`}</h3>
-            <Button title='Default' variant='outline' />
+            <Button title='Default' color='primary' variant='outline' />
           </div>
         </div>
 
         <div className='section__btn flex'>
           <div>
             <h3 className='btn-label'>{`<Button variant="text" />`}</h3>
-            <Button title='Default' variant='text' />
+            <Button title='Default' color='primary' variant='text' />
           </div>
         </div>
 
         <div className='section__btn flex'>
           <div>
             <h3 className='btn-label'>{`<Button disableShadow />`}</h3>
-            <Button title='Default' disabledShadow />
+            <Button title='Default' color='primary' disabledShadow />
           </div>
         </div>
 
@@ -54,26 +54,34 @@ export default function Home() {
         <div className='section__btn flex'>
           <div>
             <h3 className='btn-label'>{`<Button startIcon="local_grocery_store" />`}</h3>
-            <Button title='Default' startIcon='local_grocery_store' />
+            <Button
+              title='Default'
+              color='primary'
+              startIcon='local_grocery_store'
+            />
           </div>
           <div>
             <h3 className='btn-label'>{`<Button endIcon="local_grocery_store" />`}</h3>
-            <Button title='Default' endIcon='local_grocery_store' />
+            <Button
+              title='Default'
+              color='primary'
+              endIcon='local_grocery_store'
+            />
           </div>
         </div>
 
         <div className='section__btn flex'>
           <div>
             <h3 className='btn-label'>{`<Button size="sm" />`}</h3>
-            <Button title='Default' size='sm' />
+            <Button title='Default' color='primary' size='sm' />
           </div>
           <div>
             <h3 className='btn-label'>{`<Button size="md" />`}</h3>
-            <Button title='Default' size='md' />
+            <Button title='Default' color='primary' size='md' />
           </div>
           <div>
             <h3 className='btn-label'>{`<Button size="lg" />`}</h3>
-            <Button title='Default' size='lg' />
+            <Button title='Default' color='primary' size='lg' />
           </div>
         </div>
 

@@ -16,100 +16,6 @@
   background: #aeaeae;
 }
 
-.Button___outline {
-  color: #3d5afe;
-  background-color: #ffffff;
-  border: 1px solid #3d5afe;
-  box-shadow: none;
-}
-
-.Button___outline:hover,
-.Button___outline:focus {
-  background: rgba(41, 98, 255, 0.1);
-}
-
-.Button___text {
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  color: #3d5afe;
-  padding: 0;
-}
-
-.Button___text:hover,
-.Button___text:focus {
-  padding: 0.5rem 1rem;
-  background: rgba(41, 98, 255, 0.1);
-  border-radius: 6px;
-}
-
-.Button___disabledShadow {
-  background: #3d5afe;
-  color: #ffffff;
-  box-shadow: none;
-}
-
-.Button___disabled {
-  background: #e0e0e0;
-  color: #9e9e9e;
-  cursor: not-allowed;
-}
-
-.Button___textDisabled {
-  background-color: transparent;
-}
-
-.Button___disabled:focus,
-.Button___disabled:hover {
-  background: #e0e0e0;
-}
-
-.Button___textDisabled:focus,
-.Button___textDisabled:hover {
-  background-color: transparent;
-  padding: 0;
-}
-
-.Button_iconTitleWrapper {
-  background: #2962ff;
-  box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
-  color: #ffffff;
-}
-
-.Button_iconTitle {
-  display: flex;
-  align-items: center;
-}
-
-.Button_iconTitle___img {
-  width: 14px;
-  height: 14px;
-}
-
-.Button_iconTitle > * + * {
-  margin-left: 0.4rem;
-}
-
-.Button___sm,
-.Button___md,
-.Button___lg {
-  background: #2962ff;
-  color: #ffffff;
-  box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
-}
-
-.Button___sm {
-  padding: 0.25rem 0.5rem;
-}
-
-.Button___md {
-  padding: 0.5rem 1rem;
-}
-
-.Button___lg {
-  padding: 1rem 2rem;
-}
-
 .Button___primary,
 .Button___secondary,
 .Button___danger {
@@ -147,4 +53,85 @@
 .Button___danger:focus {
   background: #9a0007;
   box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
+}
+
+.Button___sm {
+  padding: 0.25rem 0.5rem;
+}
+
+.Button___md {
+  padding: 0.5rem 1rem;
+}
+
+.Button___lg {
+  padding: 1rem 2rem;
+}
+
+.Button___outline {
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
+.Button___outline:hover,
+.Button___outline:focus {
+  box-shadow: none;
+  background-color: rgba(51, 51, 51, 0.2);
+}
+
+.Button___outlineBlue {
+  color: #3d5afe;
+  border: 1px solid #3d5afe;
+}
+
+.Button___outlineBlue:hover,
+.Button___outlineBlue:focus {
+  background: rgba(41, 98, 255, 0.1);
+}
+
+.Button___text {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.Button___text:hover,
+.Button___text:focus {
+  padding: 0.5rem 1rem;
+  background-color: rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+}
+
+.Button___textBlue {
+  color: #3d5afe;
+}
+
+.Button___textBlue:hover,
+.Button___textBlue:focus {
+  background: rgba(41, 98, 255, 0.1);
+}
+
+.Button___disabledShadow,
+.Button___disabledShadow:hover,
+.Button___disabledShadow:focus {
+  box-shadow: none;
+}
+
+.Button___disabled {
+  color: #9e9e9e;
+  pointer-events: none;
+}
+
+.Button_iconTitle {
+  display: flex;
+  align-items: center;
+}
+
+.Button_iconTitle___img {
+  width: 14px;
+  height: 14px;
+}
+
+.Button_iconTitle > * + * {
+  margin-left: 0.4rem;
 }
