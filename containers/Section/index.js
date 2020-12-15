@@ -1,4 +1,3 @@
-import SectionContainer from './SectionContainer';
-import SectionWrapper from './SectionWrapper';
+import SectionButton from './SectionButton';
 
-export { SectionWrapper, SectionContainer };
+export { SectionButton };
