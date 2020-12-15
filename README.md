@@ -33,9 +33,15 @@ git clone https://github.com/khwilo/design-system.git
   </thead>
   <tbody>
     <tr>
-      <td>variant</td>
-      <td>Accepts <strong>outline</strong> or <strong>text</strong> as its values</td>
+      <td>title</td>
+      <td>The button text</td>
       <td>string</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>variant</td>
+      <td>The button variant</td>
+      <td>ButtonVariants</td>
       <td>false</td>
     </tr>
     <tr>
@@ -53,25 +59,25 @@ git clone https://github.com/khwilo/design-system.git
     <tr>
       <td>startIcon</td>
       <td>Displays an icon to the left of the button title</td>
-      <td>string</td>
+      <td>ButtonIcons</td>
       <td>false</td>
     </tr>
     <tr>
       <td>endIcon</td>
       <td>Displays an icon to the right of the button title</td>
-      <td>string</td>
+      <td>ButtonIcons</td>
       <td>false</td>
     </tr>
     <tr>
       <td>size</td>
-      <td>The size of the button. The size value can be <strong>'sm'</strong>, <strong>'lg'</strong> or <strong>'md'</strong></td>
-      <td>string</td>
+      <td>The size of the button</td>
+      <td>ButtonSizes</td>
       <td>false</td>
     </tr>
     <tr>
       <td>color</td>
-      <td>The color of the button. The color value can be <strong>'primary'</strong>, <strong>'secondary'</strong>, or <strong>'danger'</strong></td>
-      <td>string</td>
+      <td>The color of the button</td>
+      <td>ButtonColors</td>
       <td>false</td>
     </tr>
   </tbody>
@@ -91,18 +97,23 @@ git clone https://github.com/khwilo/design-system.git
   <tbody>
     <tr>
       <td>ButtonColors</td>
-      <td></td>
-      <td></td>
+      <td>PRIMARY SECONDARY DANGER</td>
+      <td>DEFAULT</td>
     </tr>
     <tr>
       <td>ButtonSizes</td>
-      <td></td>
-      <td></td>
+      <td>SMALL MEDIUM LARGE</td>
+      <td>MEDIUM</td>
     </tr>
     <tr>
       <td>ButtonOutlines</td>
-      <td></td>
-      <td></td>
+      <td>OUTLINE TEXT</td>
+      <td>NONE</td>
+    </tr>
+    <tr>
+      <td>ButtonIcons</td>
+      <td>LOCAL_GROCERY_STORE</td>
+      <td>NONE</td>
     </tr>
   </tbody>
 </table>
