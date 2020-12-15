@@ -11,6 +11,7 @@
   transition: all 600ms ease-in-out;
 }
 
+.defaultHoverFocus,
 .Button:hover,
 .Button:focus {
   background: #aeaeae;
@@ -83,6 +84,7 @@
   border: 1px solid #3d5afe;
 }
 
+.primaryOutlineHoverFocus,
 .Button___outlineBlue:hover,
 .Button___outlineBlue:focus {
   background: rgba(41, 98, 255, 0.1);
@@ -106,6 +108,11 @@
   color: #3d5afe;
 }
 
+.primaryTextHoverFocus {
+  padding: 0.5rem 1rem;
+}
+
+.primaryTextHoverFocus,
 .Button___textBlue:hover,
 .Button___textBlue:focus {
   background: rgba(41, 98, 255, 0.1);

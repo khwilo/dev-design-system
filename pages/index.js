@@ -17,6 +17,10 @@ export default function Home() {
             <h3 className='btn-label'>{`<Button />`}</h3>
             <Button title='Default' />
           </div>
+          <div>
+            <h3 className='btn-label'>{`<Button />`}</h3>
+            <Button title='Default' defaultHoverFocus />
+          </div>
         </div>
 
         <div className='section__btn flex'>
@@ -24,12 +28,30 @@ export default function Home() {
             <h3 className='btn-label'>{`<Button variant="outline" />`}</h3>
             <Button title='Default' color='primary' variant='outline' />
           </div>
+          <div>
+            <h3 className='btn-label'>{`<Button variant="outline" />`}</h3>
+            <Button
+              title='Default'
+              color='primary'
+              variant='outline'
+              primaryOutlineHoverFocus
+            />
+          </div>
         </div>
 
         <div className='section__btn flex'>
           <div>
             <h3 className='btn-label'>{`<Button variant="text" />`}</h3>
             <Button title='Default' color='primary' variant='text' />
+          </div>
+          <div>
+            <h3 className='btn-label'>{`<Button variant="text" />`}</h3>
+            <Button
+              title='Default'
+              color='primary'
+              variant='text'
+              primaryTextHoverFocus
+            />
           </div>
         </div>
 
