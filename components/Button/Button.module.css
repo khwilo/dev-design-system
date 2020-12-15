@@ -110,6 +110,7 @@
 
 .primaryTextHoverFocus {
   padding: 0.5rem 1rem;
+  box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
 }
 
 .primaryTextHoverFocus,
