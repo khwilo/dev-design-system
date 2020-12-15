@@ -57,8 +57,6 @@ const Button = ({
       />
     ) : null;
 
-  console.log('start: ', startIcon);
-
   return (
     <button
       className={computedClassNames}
