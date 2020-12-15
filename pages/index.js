@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Button from '../components/Button';
+import { SectionContainer, SectionWrapper } from '../containers/Section';
 
 export default function Home() {
   return (
@@ -12,119 +13,105 @@ export default function Home() {
       <section className='section flow'>
         <h1 className='section-heading1'>Buttons</h1>
 
-        <div className='section__btn flex'>
-          <div>
-            <h3 className='btn-label'>{`<Button />`}</h3>
+        <SectionWrapper>
+          <SectionContainer heading={'<Button />'}>
             <Button title='Default' />
-          </div>
-          <div>
-            <h3 className='btn-label'>{`<Button />`}</h3>
+          </SectionContainer>
+          <SectionContainer heading={'&:hover, &:focus'}>
             <Button title='Default' defaultHoverFocus />
-          </div>
-        </div>
+          </SectionContainer>
+        </SectionWrapper>
 
-        <div className='section__btn flex'>
-          <div>
-            <h3 className='btn-label'>{`<Button variant="outline" />`}</h3>
+        <SectionWrapper>
+          <SectionContainer heading={'<Button variant="outline" />'}>
             <Button title='Default' color='primary' variant='outline' />
-          </div>
-          <div>
-            <h3 className='btn-label'>{`<Button variant="outline" />`}</h3>
+          </SectionContainer>
+          <SectionContainer heading={'&:hover, &:focus'}>
             <Button
               title='Default'
               color='primary'
               variant='outline'
               primaryOutlineHoverFocus
             />
-          </div>
-        </div>
+          </SectionContainer>
+        </SectionWrapper>
 
-        <div className='section__btn flex'>
-          <div>
-            <h3 className='btn-label'>{`<Button variant="text" />`}</h3>
+        <SectionWrapper>
+          <SectionContainer heading={'<Button variant="text" />'}>
             <Button title='Default' color='primary' variant='text' />
-          </div>
-          <div>
-            <h3 className='btn-label'>{`<Button variant="text" />`}</h3>
+          </SectionContainer>
+          <SectionContainer heading={'&:hover, &:focus'}>
             <Button
               title='Default'
               color='primary'
               variant='text'
               primaryTextHoverFocus
             />
-          </div>
-        </div>
+          </SectionContainer>
+        </SectionWrapper>
 
-        <div className='section__btn flex'>
-          <div>
-            <h3 className='btn-label'>{`<Button disableShadow />`}</h3>
+        <SectionWrapper>
+          <SectionContainer heading={'<Button disableShadow />'}>
             <Button title='Default' color='primary' disabledShadow />
-          </div>
-        </div>
+          </SectionContainer>
+        </SectionWrapper>
 
-        <div className='section__btn flex'>
-          <div>
-            <h3 className='btn-label'>{`<Button disabled />`}</h3>
+        <SectionWrapper>
+          <SectionContainer heading={'<Button disabled />'}>
             <Button title='Default' disabled />
-          </div>
-          <div>
-            <h3 className='btn-label'>{`<Button variant="text" disabled />`}</h3>
+          </SectionContainer>
+          <SectionContainer heading={'<Button variant="text" disabled />'}>
             <Button title='Default' variant='text' disabled />
-          </div>
-        </div>
+          </SectionContainer>
+        </SectionWrapper>
 
-        <div className='section__btn flex'>
-          <div>
-            <h3 className='btn-label'>{`<Button startIcon="local_grocery_store" />`}</h3>
+        <SectionWrapper>
+          <SectionContainer
+            heading={'<Button startIcon="local_grocery_store" />'}
+          >
             <Button
               title='Default'
               color='primary'
               startIcon='local_grocery_store'
             />
-          </div>
-          <div>
-            <h3 className='btn-label'>{`<Button endIcon="local_grocery_store" />`}</h3>
+          </SectionContainer>
+          <SectionContainer
+            heading={'<Button endIcon="local_grocery_store" />'}
+          >
             <Button
               title='Default'
               color='primary'
               endIcon='local_grocery_store'
             />
-          </div>
-        </div>
+          </SectionContainer>
+        </SectionWrapper>
 
-        <div className='section__btn flex'>
-          <div>
-            <h3 className='btn-label'>{`<Button size="sm" />`}</h3>
+        <SectionWrapper>
+          <SectionContainer heading={'<Button size="sm" />'}>
             <Button title='Default' color='primary' size='sm' />
-          </div>
-          <div>
-            <h3 className='btn-label'>{`<Button size="md" />`}</h3>
+          </SectionContainer>
+          <SectionContainer heading={'<Button size="md" />'}>
             <Button title='Default' color='primary' size='md' />
-          </div>
-          <div>
-            <h3 className='btn-label'>{`<Button size="lg" />`}</h3>
+          </SectionContainer>
+          <SectionContainer heading={'<Button size="lg" /'}>
             <Button title='Default' color='primary' size='lg' />
-          </div>
-        </div>
+          </SectionContainer>
+        </SectionWrapper>
 
-        <div className='section__btn flex'>
-          <div>
-            <h3 className='btn-label'>{`<Button color="default" />`}</h3>
+        <SectionWrapper>
+          <SectionContainer heading={'<Button color="default" />'}>
             <Button title='Default' color='default' />
-          </div>
-          <div>
-            <h3 className='btn-label'>{`<Button color="primary" />`}</h3>
+          </SectionContainer>
+          <SectionContainer heading={'<Button color="primary" />'}>
             <Button title='Default' color='primary' />
-          </div>
-          <div>
-            <h3 className='btn-label'>{`<Button color="secondary" />`}</h3>
+          </SectionContainer>
+          <SectionContainer heading={'<Button color="secondary" />'}>
             <Button title='Default' color='secondary' />
-          </div>
-          <div>
-            <h3 className='btn-label'>{`<Button color="danger" />`}</h3>
+          </SectionContainer>
+          <SectionContainer heading={'<Button color="danger" />'}>
             <Button title='Default' color='danger' />
-          </div>
-        </div>
+          </SectionContainer>
+        </SectionWrapper>
       </section>
     </div>
   );
