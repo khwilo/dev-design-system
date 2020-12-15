@@ -15,6 +15,7 @@ const Button = ({
   endIcon,
   size,
   color,
+  onClickHandler,
   disabledShadow = false,
   disabled = false,
   ...props
@@ -59,7 +60,11 @@ const Button = ({
   console.log('start: ', startIcon);
 
   return (
-    <button className={computedClassNames} disabled={disabled}>
+    <button
+      className={computedClassNames}
+      onClick={(event) => onClickHandler(event)}
+      disabled={disabled}
+    >
       {startIcon ? (
         <div className={styles.Button_iconTitle}>
           {image}
