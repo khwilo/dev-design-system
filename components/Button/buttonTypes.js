@@ -14,3 +14,7 @@ export const ButtonVariants = Object.freeze({
   OUTLINE: 'outline',
   TEXT: 'text',
 });
+
+export const ButtonIcons = Object.freeze({
+  LOCAL_GROCERY_STORE: 'local_grocery_store',
+});
