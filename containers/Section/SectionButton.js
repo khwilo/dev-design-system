@@ -1,4 +1,9 @@
 import Button from '../../components/Button';
+import {
+  ButtonColors,
+  ButtonSizes,
+  ButtonVariants,
+} from '../../components/Button/buttonTypes';
 import SectionContainer from './SectionContainer';
 import SectionWrapper from './SectionWrapper';
 
@@ -17,13 +22,17 @@ const SectionButton = () => (
 
     <SectionWrapper>
       <SectionContainer heading={'<Button variant="outline" />'}>
-        <Button title='Default' color='primary' variant='outline' />
+        <Button
+          title='Default'
+          color={ButtonColors.PRIMARY}
+          variant={ButtonVariants.OUTLINE}
+        />
       </SectionContainer>
       <SectionContainer heading={'&:hover, &:focus'}>
         <Button
           title='Default'
-          color='primary'
-          variant='outline'
+          color={ButtonColors.PRIMARY}
+          variant={ButtonVariants.OUTLINE}
           primaryOutlineHoverFocus
         />
       </SectionContainer>
@@ -36,8 +45,8 @@ const SectionButton = () => (
       <SectionContainer heading={'&:hover, &:focus'}>
         <Button
           title='Default'
-          color='primary'
-          variant='text'
+          color={ButtonColors.PRIMARY}
+          variant={ButtonVariants.TEXT}
           primaryTextHoverFocus
         />
       </SectionContainer>
@@ -45,7 +54,7 @@ const SectionButton = () => (
 
     <SectionWrapper>
       <SectionContainer heading={'<Button disableShadow />'}>
-        <Button title='Default' color='primary' disabledShadow />
+        <Button title='Default' color={ButtonColors.PRIMARY} disabledShadow />
       </SectionContainer>
     </SectionWrapper>
 
@@ -54,7 +63,7 @@ const SectionButton = () => (
         <Button title='Default' disabled />
       </SectionContainer>
       <SectionContainer heading={'<Button variant="text" disabled />'}>
-        <Button title='Default' variant='text' disabled />
+        <Button title='Default' variant={ButtonVariants.TEXT} disabled />
       </SectionContainer>
     </SectionWrapper>
 
@@ -62,54 +71,78 @@ const SectionButton = () => (
       <SectionContainer heading={'<Button startIcon="local_grocery_store" />'}>
         <Button
           title='Default'
-          color='primary'
+          color={ButtonColors.PRIMARY}
           startIcon='local_grocery_store'
         />
       </SectionContainer>
       <SectionContainer heading={'<Button endIcon="local_grocery_store" />'}>
-        <Button title='Default' color='primary' endIcon='local_grocery_store' />
+        <Button
+          title='Default'
+          color={ButtonColors.PRIMARY}
+          endIcon='local_grocery_store'
+        />
       </SectionContainer>
     </SectionWrapper>
 
     <SectionWrapper>
       <SectionContainer heading={'<Button size="sm" />'}>
-        <Button title='Default' color='primary' size='sm' />
+        <Button
+          title='Default'
+          color={ButtonColors.PRIMARY}
+          size={ButtonSizes.SMALL}
+        />
       </SectionContainer>
       <SectionContainer heading={'<Button size="md" />'}>
-        <Button title='Default' color='primary' size='md' />
+        <Button
+          title='Default'
+          color={ButtonColors.PRIMARY}
+          size={ButtonSizes.MEDIUM}
+        />
       </SectionContainer>
       <SectionContainer heading={'<Button size="lg" />'}>
-        <Button title='Default' color='primary' size='lg' />
+        <Button
+          title='Default'
+          color={ButtonColors.PRIMARY}
+          size={ButtonSizes.LARGE}
+        />
       </SectionContainer>
     </SectionWrapper>
 
     <SectionWrapper>
       <SectionContainer heading={'<Button color="default" />'}>
-        <Button title='Default' color='default' />
+        <Button title='Default' />
       </SectionContainer>
       <SectionContainer heading={'<Button color="primary" />'}>
-        <Button title='Default' color='primary' />
+        <Button title='Default' color={ButtonColors.PRIMARY} />
       </SectionContainer>
       <SectionContainer heading={'<Button color="secondary" />'}>
-        <Button title='Default' color='secondary' />
+        <Button title='Default' color={ButtonColors.SECONDARY} />
       </SectionContainer>
       <SectionContainer heading={'<Button color="danger" />'}>
-        <Button title='Default' color='danger' />
+        <Button title='Default' color={ButtonColors.DANGER} />
       </SectionContainer>
     </SectionWrapper>
 
     <SectionWrapper>
       <SectionContainer heading={'&:hover, &:focus '}>
-        <Button title='Default' color='default' defaultHoverFocus />
+        <Button title='Default' defaultHoverFocus />
       </SectionContainer>
       <SectionContainer heading={'&:hover, &:focus '}>
-        <Button title='Default' color='primary' primaryHoverFocus />
+        <Button
+          title='Default'
+          color={ButtonColors.PRIMARY}
+          primaryHoverFocus
+        />
       </SectionContainer>
       <SectionContainer heading={'&:hover, &:focus '}>
-        <Button title='Default' color='secondary' secondaryHoverFocus />
+        <Button
+          title='Default'
+          color={ButtonColors.SECONDARY}
+          secondaryHoverFocus
+        />
       </SectionContainer>
       <SectionContainer heading={'&:hover, &:focus '}>
-        <Button title='Default' color='danger' dangerHoverFocus />
+        <Button title='Default' color={ButtonColors.DANGER} dangerHoverFocus />
       </SectionContainer>
     </SectionWrapper>
   </section>
