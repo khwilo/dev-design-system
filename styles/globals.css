@@ -1,4 +1,6 @@
 :root {
+  font-size: calc(0.4em + 1vw);
+
   --fw-medium: 500;
   --fw-regular: 400;
 
@@ -58,8 +60,12 @@ li {
 
 @media (min-width: 48em) {
   .section__content {
-    margin: 0 0 0 18rem;
+    margin: 0 0 0 13rem;
   }
+}
+
+.section__container {
+  min-width: 22%;
 }
 
 .text-gray {
@@ -74,10 +80,24 @@ li {
 
 .section__btn {
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 48em) {
+  .section__btn {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .section__btn > * + * {
-  margin-left: 8rem;
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 48em) {
+  .section__btn > * + * {
+    margin-left: 3rem;
+  }
 }
 
 .btn-label {
