@@ -15,7 +15,8 @@
 
 html,
 body,
-h1 {
+h1,
+ul {
   padding: 0;
   margin: 0;
 }
@@ -25,12 +26,40 @@ body {
   font-family: 'Ubuntu Mono', monospace;
 }
 
-.wrapper {
-  padding: 1rem;
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 0.8125rem;
 }
 
 .flow > * + * {
   margin-top: 1.5rem;
+}
+
+@media (min-width: 48em) {
+  .main {
+    display: flex;
+  }
+}
+
+.section__content {
+  padding: 1rem 2rem;
+  margin-top: 5rem;
+}
+
+@media (min-width: 48em) {
+  .section__content {
+    margin: 0 0 0 18rem;
+  }
 }
 
 .text-gray {
