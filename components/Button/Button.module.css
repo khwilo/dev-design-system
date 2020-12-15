@@ -79,18 +79,38 @@
 .Button___outline:hover,
 .Button___outline:focus {
   box-shadow: none;
-  background-color: rgba(51, 51, 51, 0.2);
+  background-color: rgba(51, 51, 51, 0.1);
 }
 
-.Button___outlineBlue {
+.Button___outlinePrimary {
   color: #3d5afe;
   border: 1px solid #3d5afe;
 }
 
 .primaryOutlineHoverFocus,
-.Button___outlineBlue:hover,
-.Button___outlineBlue:focus {
+.Button___outlinePrimary:hover,
+.Button___outlinePrimary:focus {
   background: rgba(41, 98, 255, 0.1);
+}
+
+.Button___outlineSecondary {
+  color: #1c313a;
+  border: 1px solid #1c313a;
+}
+
+.Button___outlineSecondary :hover,
+.Button___outlineSecondary :focus {
+  background: rgba(69, 90, 100, 0.1);
+}
+
+.Button___outlineDanger {
+  color: #9a0007;
+  border: 1px solid #9a0007;
+}
+
+.Button___outlineDanger:hover,
+.Button___outlineDanger:focus {
+  background: rgba(211, 47, 47, 0.1);
 }
 
 .Button___text {

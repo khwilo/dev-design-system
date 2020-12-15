@@ -33,8 +33,12 @@ const Button = ({
     [styles.Button___md]: size === ButtonSizes.MEDIUM,
     [styles.Button___lg]: size === ButtonSizes.LARGE,
     [styles.Button___outline]: variant === ButtonVariants.OUTLINE,
-    [styles.Button___outlineBlue]:
+    [styles.Button___outlinePrimary]:
       variant === ButtonVariants.OUTLINE && color === ButtonColors.PRIMARY,
+    [styles.Button___outlineSecondary]:
+      variant === ButtonVariants.OUTLINE && color === ButtonColors.SECONDARY,
+    [styles.Button___outlineDanger]:
+      variant === ButtonVariants.OUTLINE && color === ButtonColors.DANGER,
     [styles.Button___text]: variant === ButtonVariants.TEXT,
     [styles.Button___textBlue]:
       variant === ButtonVariants.TEXT && color === ButtonColors.PRIMARY,
