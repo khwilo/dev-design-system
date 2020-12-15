@@ -110,13 +110,13 @@
 
 .primaryTextHoverFocus {
   padding: 0.5rem 1rem;
-  box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
 }
 
 .primaryTextHoverFocus,
 .Button___textBlue:hover,
 .Button___textBlue:focus {
   background: rgba(41, 98, 255, 0.1);
+  box-shadow: none;
 }
 
 .Button___disabledShadow,
