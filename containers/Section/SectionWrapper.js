@@ -1,5 +1,5 @@
 const SectionWrapper = ({ children }) => (
-  <div className='section__btn flex'>{children}</div>
+  <div className='section__wrapper flex'>{children}</div>
 );
 
 export default SectionWrapper;

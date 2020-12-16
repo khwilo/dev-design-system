@@ -3,14 +3,14 @@ import SectionContainer from './SectionContainer';
 import SectionWrapper from './SectionWrapper';
 
 const SectionButton = () => (
-  <section className='section__content flow'>
+  <section className='section section--content flow'>
     <h2 className='section-heading1'>Buttons</h2>
 
     <SectionWrapper>
       <SectionContainer heading={'<Button />'}>
         <Button title='Default' />
       </SectionContainer>
-      <SectionContainer heading={'&:hover, &:focus'}>
+      <SectionContainer heading={'&:hover, &:focus'} faintHeading>
         <Button title='Default' defaultHoverFocus />
       </SectionContainer>
     </SectionWrapper>
@@ -19,7 +19,7 @@ const SectionButton = () => (
       <SectionContainer heading={'<Button variant="outline" />'}>
         <Button title='Default' color='primary' variant='outline' />
       </SectionContainer>
-      <SectionContainer heading={'&:hover, &:focus'}>
+      <SectionContainer heading={'&:hover, &:focus'} faintHeading>
         <Button
           title='Default'
           color='primary'
@@ -33,7 +33,7 @@ const SectionButton = () => (
       <SectionContainer heading={'<Button variant="text" />'}>
         <Button title='Default' color='primary' variant='text' />
       </SectionContainer>
-      <SectionContainer heading={'&:hover, &:focus'}>
+      <SectionContainer heading={'&:hover, &:focus'} faintHeading>
         <Button
           title='Default'
           color='primary'
@@ -99,16 +99,16 @@ const SectionButton = () => (
     </SectionWrapper>
 
     <SectionWrapper>
-      <SectionContainer heading={'&:hover, &:focus '}>
+      <SectionContainer heading={'&:hover, &:focus '} faintHeading>
         <Button title='Default' defaultHoverFocus />
       </SectionContainer>
-      <SectionContainer heading={'&:hover, &:focus '}>
+      <SectionContainer heading={'&:hover, &:focus '} faintHeading>
         <Button title='Default' color='primary' primaryHoverFocus />
       </SectionContainer>
-      <SectionContainer heading={'&:hover, &:focus '}>
+      <SectionContainer heading={'&:hover, &:focus '} faintHeading>
         <Button title='Default' color='secondary' secondaryHoverFocus />
       </SectionContainer>
-      <SectionContainer heading={'&:hover, &:focus '}>
+      <SectionContainer heading={'&:hover, &:focus '} faintHeading>
         <Button title='Default' color='danger' dangerHoverFocus />
       </SectionContainer>
     </SectionWrapper>

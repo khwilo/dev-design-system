@@ -1,6 +1,8 @@
-const SectionContainer = ({ children, heading }) => (
+const SectionContainer = ({ children, heading, faintHeading }) => (
   <section className='section__container'>
-    <h3 className='btn-label'>{heading}</h3>
+    <h3 className='section__label' style={{ color: faintHeading && '#828282' }}>
+      {heading}
+    </h3>
     {children}
   </section>
 );
