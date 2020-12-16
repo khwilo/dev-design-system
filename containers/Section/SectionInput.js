@@ -56,6 +56,12 @@ const SectionInput = () => (
         <Input id='input11' iconSrc='assets/images/padlock.svg' endIcon />
       </SectionContainer>
     </SectionWrapper>
+
+    <SectionWrapper>
+      <SectionContainer heading={'<Input value="text" />'}>
+        <Input id='input12' value='Text' />
+      </SectionContainer>
+    </SectionWrapper>
   </SectionContent>
 );
 

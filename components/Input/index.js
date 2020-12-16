@@ -10,6 +10,8 @@ const Input = ({
   iconSrc,
   startIcon,
   endIcon,
+  value,
+  onChangeInputHandler = () => {},
   disabled = false,
   label = 'Label',
   type = 'text',
@@ -41,6 +43,8 @@ const Input = ({
             type={type}
             id={id}
             name={name || id}
+            value={value}
+            onChange={(event) => onChangeInputHandler(event)}
             placeholder={placeholder}
           />
           <label htmlFor={id}>
