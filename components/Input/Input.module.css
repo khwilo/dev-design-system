@@ -44,15 +44,16 @@
   position: relative;
 }
 
-.Field___IconStart {
+.Field___icon {
   position: absolute;
-  top: 1em;
+  top: 2.6em;
+}
+
+.Field___IconStart {
   left: 0.4em;
 }
 
 .Field___IconEnd {
-  position: absolute;
-  top: 1em;
   right: 0.4em;
 }
 
