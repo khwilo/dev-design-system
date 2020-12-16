@@ -79,6 +79,7 @@ li {
   font-family: 'Poppins', sans-serif;
   font-weight: var(--fw-medium);
   font-size: var(--fs-title);
+  text-transform: capitalize;
 }
 
 .section__wrapper {
