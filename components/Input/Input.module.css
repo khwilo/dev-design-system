@@ -32,6 +32,30 @@
   color: #828282;
 }
 
+.Field___controlWithIconStart {
+  padding-left: 2em;
+}
+
+.Field___controlWithIconEnd {
+  padding-left: 0.9em;
+}
+
+.Field___inputIcons {
+  position: relative;
+}
+
+.Field___IconStart {
+  position: absolute;
+  top: 1em;
+  left: 0.4em;
+}
+
+.Field___IconEnd {
+  position: absolute;
+  top: 1em;
+  right: 0.4em;
+}
+
 .Field___controlError {
   border: 1px solid #d32f2f;
 }

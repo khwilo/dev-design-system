@@ -44,7 +44,16 @@ const SectionInput = () => (
       <SectionContainer
         heading={'<Input helperText="Some interesting text" error />'}
       >
-        <Input id='input8' helperText='Some interesting text' error />
+        <Input id='input9' helperText='Some interesting text' error />
+      </SectionContainer>
+    </SectionWrapper>
+
+    <SectionWrapper>
+      <SectionContainer heading={'<Input startIcon />'}>
+        <Input id='input10' iconSrc='assets/images/phone.svg' startIcon />
+      </SectionContainer>
+      <SectionContainer heading={'<Input endIcon />'}>
+        <Input id='input11' iconSrc='assets/images/padlock.svg' endIcon />
       </SectionContainer>
     </SectionWrapper>
   </SectionContent>

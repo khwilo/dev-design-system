@@ -7,6 +7,9 @@ const Input = ({
   name,
   error,
   helperText,
+  iconSrc,
+  startIcon,
+  endIcon,
   disabled = false,
   label = 'Label',
   type = 'text',
@@ -14,6 +17,8 @@ const Input = ({
   ...props
 }) => {
   const computedInputClassNames = cn(styles.Field___control, {
+    [styles.Field___controlWithIconStart]: iconSrc && startIcon,
+    [styles.Field___controlWithIconEnd]: iconSrc && endIcon,
     [styles.Field___controlError]: error,
     [styles.defaultHover]: props.defaultHover,
     [styles.defaultFocus]: props.defaultFocus,
@@ -21,16 +26,24 @@ const Input = ({
     [styles.Field___disabled]: disabled,
   });
 
+  const computedFieldIconClassNames = cn({
+    [styles.Field___IconStart]: iconSrc && startIcon,
+    [styles.Field___IconEnd]: iconSrc && endIcon,
+  });
+
   return (
     <div className={styles.Field}>
       <div className={styles.Field___wrapper}>
-        <input
-          className={computedInputClassNames}
-          type={type}
-          id={id}
-          name={name || id}
-          placeholder={placeholder}
-        />
+        <div className={styles.Field___inputIcons}>
+          <img className={computedFieldIconClassNames} src={iconSrc} alt='' />
+          <input
+            className={computedInputClassNames}
+            type={type}
+            id={id}
+            name={name || id}
+            placeholder={placeholder}
+          />
+        </div>
         <label htmlFor={id}>
           <span className={styles.Field___label}>{label}</span>
         </label>
