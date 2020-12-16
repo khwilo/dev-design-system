@@ -1,6 +1,7 @@
 import cn from 'classnames';
 
 import styles from './Input.module.css';
+import { InputSizes } from './inputTypes';
 
 const Input = ({
   id,
@@ -25,8 +26,8 @@ const Input = ({
 }) => {
   const computedInputClassNames = cn(styles.Field___control, {
     [styles.Field___controlMultiline]: multiline,
-    [styles.Field___controlSizeSmall]: size === 'sm',
-    [styles.Field___controlSizeMedium]: size === 'md',
+    [styles.Field___controlSizeSmall]: size === InputSizes.SMALL,
+    [styles.Field___controlSizeMedium]: size === InputSizes.MEDIUM,
     [styles.Field___controlFullWidth]: fullWidth,
     [styles.Field___controlWithIconStart]: iconSrc && startIcon,
     [styles.Field___controlWithIconEnd]: iconSrc && endIcon,
