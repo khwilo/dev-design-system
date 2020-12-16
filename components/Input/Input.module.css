@@ -13,7 +13,7 @@
 
 .Field___control {
   width: 12rem;
-  height: 3rem;
+  height: 2.8rem;
   font-family: Noto Sans JP;
   font-style: normal;
   font-weight: var(--fw-medium);
@@ -25,11 +25,11 @@
 }
 
 .Field___controlSizeSmall {
-  height: 2rem;
+  height: 2.4rem;
 }
 
 .Field___controlSizeMedium {
-  height: 3rem;
+  height: 2.8rem;
 }
 
 .Field___controlFullWidth {
@@ -88,7 +88,8 @@
 
 .Field___icon {
   position: absolute;
-  top: 2.6em;
+  top: 2.8rem;
+  transform: translateY(-50%);
 }
 
 .Field___IconStart {
