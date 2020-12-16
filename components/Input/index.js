@@ -12,6 +12,7 @@ const Input = ({
   endIcon,
   value,
   size,
+  fullWidth,
   disabled = false,
   label = 'Label',
   type = 'text',
@@ -22,6 +23,7 @@ const Input = ({
   const computedInputClassNames = cn(styles.Field___control, {
     [styles.Field___controlSizeSmall]: size === 'sm',
     [styles.Field___controlSizeMedium]: size === 'md',
+    [styles.Field___controlFullWidth]: fullWidth,
     [styles.Field___controlWithIconStart]: iconSrc && startIcon,
     [styles.Field___controlWithIconEnd]: iconSrc && endIcon,
     [styles.Field___controlError]: error,

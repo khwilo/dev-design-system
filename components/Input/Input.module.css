@@ -32,6 +32,40 @@
   height: 3rem;
 }
 
+.Field___controlFullWidth {
+  width: 30rem;
+}
+
+@media (min-width: 23.4375em) {
+  .Field___controlFullWidth {
+    width: 33rem;
+  }
+}
+
+@media (min-width: 26.5625em) {
+  .Field___controlFullWidth {
+    width: 36rem;
+  }
+}
+
+@media (min-width: 35em) {
+  .Field___controlFullWidth {
+    width: 42rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .Field___controlFullWidth {
+    width: 44rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .Field___controlFullWidth {
+    width: 48rem;
+  }
+}
+
 .Field___hint {
   font-family: Noto Sans JP;
   font-style: normal;

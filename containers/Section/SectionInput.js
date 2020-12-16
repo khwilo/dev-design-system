@@ -71,6 +71,12 @@ const SectionInput = () => (
         <Input id='input13' size='md' />
       </SectionContainer>
     </SectionWrapper>
+
+    <SectionWrapper>
+      <SectionContainer heading={'<Input fullWidth />'}>
+        <Input id='input14' fullWidth />
+      </SectionContainer>
+    </SectionWrapper>
   </SectionContent>
 );
 
