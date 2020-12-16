@@ -24,30 +24,30 @@ const Input = ({
   onChangeInputHandler = () => {},
   ...props
 }) => {
-  const computedInputClassNames = cn(styles.Field___control, {
-    [styles.Field___controlMultiline]: multiline,
-    [styles.Field___controlSizeSmall]: size === InputSizes.SMALL,
-    [styles.Field___controlSizeMedium]: size === InputSizes.MEDIUM,
-    [styles.Field___controlFullWidth]: fullWidth,
-    [styles.Field___controlWithIconStart]: iconSrc && startIcon,
-    [styles.Field___controlWithIconEnd]: iconSrc && endIcon,
-    [styles.Field___controlError]: error,
+  const computedInputClassNames = cn(styles.Field_control, {
+    [styles.Field_control___multiline]: multiline,
+    [styles.Field_control___small]: size === InputSizes.SMALL,
+    [styles.Field_control___medium]: size === InputSizes.MEDIUM,
+    [styles.Field_control___fullWidth]: fullWidth,
+    [styles.Field_control___iconStart]: iconSrc && startIcon,
+    [styles.Field_control___iconEnd]: iconSrc && endIcon,
+    [styles.Field_control___error]: error,
     [styles.defaultHover]: props.defaultHover,
     [styles.defaultFocus]: props.defaultFocus,
     [styles.errorHover]: props.errorHover,
-    [styles.Field___disabled]: disabled,
+    [styles.Field_control___disabled]: disabled,
   });
 
-  const computedFieldIconClassNames = cn(styles.Field___icon, {
-    [styles.Field___IconStart]: iconSrc && startIcon,
-    [styles.Field___IconEnd]: iconSrc && endIcon,
+  const computedFieldIconClassNames = cn(styles.Field_icon, {
+    [styles.Field_icon___start]: iconSrc && startIcon,
+    [styles.Field_icon___end]: iconSrc && endIcon,
   });
 
   return (
     <div className={styles.Field}>
-      <div className={styles.Field___inputIcons}>
+      <div className={styles.Field_inputIcons}>
         <img className={computedFieldIconClassNames} src={iconSrc} alt='' />
-        <div className={styles.Field___wrapper}>
+        <div className={styles.Field_wrapper}>
           {multiline ? (
             <textarea
               className={computedInputClassNames}
@@ -69,14 +69,14 @@ const Input = ({
                 placeholder={placeholder}
               />
               <label htmlFor={id}>
-                <span className={styles.Field___label}>{label}</span>
+                <span className={styles.Field_label}>{label}</span>
               </label>
             </>
           )}
         </div>
       </div>
       <span
-        className={styles.Field___hint}
+        className={styles.Field_hint}
         style={{ color: error ? '#d32f2f' : '' }}
       >
         {helperText}
