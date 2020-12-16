@@ -19,7 +19,10 @@ const Navigation = () => {
             <a
               className={styles.nav___link}
               onClick={() => setCurrentSection(1)}
-              style={{ color: currentSection === 1 && '#090f31' }}
+              style={{
+                color: currentSection === 1 && '#090f31',
+                fontWeight: currentSection === 1 && 'var(--fw-bold)',
+              }}
             >
               Button
             </a>
@@ -28,7 +31,10 @@ const Navigation = () => {
             <a
               className={styles.nav___link}
               onClick={() => setCurrentSection(2)}
-              style={{ color: currentSection === 2 && '#090f31' }}
+              style={{
+                color: currentSection === 2 && '#090f31',
+                fontWeight: currentSection === 2 && 'var(--fw-bold)',
+              }}
             >
               Input
             </a>

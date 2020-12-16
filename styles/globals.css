@@ -1,6 +1,8 @@
 :root {
   font-size: calc(0.4em + 1vw);
 
+  --fw-bold: 700;
+  --fw-semi-bold: 600;
   --fw-medium: 500;
   --fw-regular: 400;
 
@@ -44,7 +46,7 @@ li {
 
 .logo {
   font-family: Poppins;
-  font-weight: 600;
+  font-weight: var(--fw-semi-bold);
   font-size: 0.8125rem;
 }
 
