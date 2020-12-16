@@ -34,6 +34,19 @@ const SectionInput = () => (
         <Input id='input7' disabled />
       </SectionContainer>
     </SectionWrapper>
+
+    <SectionWrapper>
+      <SectionContainer
+        heading={'<Input helperText="Some interesting text" />'}
+      >
+        <Input id='input8' helperText='Some interesting text' />
+      </SectionContainer>
+      <SectionContainer
+        heading={'<Input helperText="Some interesting text" error />'}
+      >
+        <Input id='input8' helperText='Some interesting text' error />
+      </SectionContainer>
+    </SectionWrapper>
   </SectionContent>
 );
 

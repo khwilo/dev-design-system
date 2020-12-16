@@ -6,6 +6,7 @@ const Input = ({
   id,
   name,
   error,
+  helperText,
   disabled = false,
   label = 'Label',
   type = 'text',
@@ -22,16 +23,24 @@ const Input = ({
 
   return (
     <div className={styles.Field}>
-      <input
-        className={computedInputClassNames}
-        type={type}
-        id={id}
-        name={name || id}
-        placeholder={placeholder}
-      />
-      <label htmlFor={id}>
-        <span className={styles.Field___label}>{label}</span>
-      </label>
+      <div className={styles.Field___wrapper}>
+        <input
+          className={computedInputClassNames}
+          type={type}
+          id={id}
+          name={name || id}
+          placeholder={placeholder}
+        />
+        <label htmlFor={id}>
+          <span className={styles.Field___label}>{label}</span>
+        </label>
+      </div>
+      <span
+        className={styles.Field___hint}
+        style={{ color: error ? '#d32f2f' : '' }}
+      >
+        {helperText}
+      </span>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-.Field {
+.Field___wrapper {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -22,6 +22,14 @@
   color: #828282;
   border: 1px solid #828282;
   border-radius: 0.5rem;
+}
+
+.Field___hint {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.625rem;
+  color: #828282;
 }
 
 .Field___controlError {
