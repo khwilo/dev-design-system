@@ -13,6 +13,9 @@ const Input = ({
   value,
   size,
   fullWidth,
+  multiline,
+  rows,
+  cols = 12,
   disabled = false,
   label = 'Label',
   type = 'text',
@@ -21,6 +24,7 @@ const Input = ({
   ...props
 }) => {
   const computedInputClassNames = cn(styles.Field___control, {
+    [styles.Field___controlMultiline]: multiline,
     [styles.Field___controlSizeSmall]: size === 'sm',
     [styles.Field___controlSizeMedium]: size === 'md',
     [styles.Field___controlFullWidth]: fullWidth,
@@ -43,18 +47,31 @@ const Input = ({
       <div className={styles.Field___inputIcons}>
         <img className={computedFieldIconClassNames} src={iconSrc} alt='' />
         <div className={styles.Field___wrapper}>
-          <input
-            className={computedInputClassNames}
-            type={type}
-            id={id}
-            name={name || id}
-            value={value}
-            onChange={(event) => onChangeInputHandler(event)}
-            placeholder={placeholder}
-          />
-          <label htmlFor={id}>
-            <span className={styles.Field___label}>{label}</span>
-          </label>
+          {multiline ? (
+            <textarea
+              className={computedInputClassNames}
+              id={id}
+              name={name || id}
+              rows={rows}
+              cols={cols}
+              placeholder={placeholder}
+            ></textarea>
+          ) : (
+            <>
+              <input
+                className={computedInputClassNames}
+                type={type}
+                id={id}
+                name={name || id}
+                value={value}
+                onChange={(event) => onChangeInputHandler(event)}
+                placeholder={placeholder}
+              />
+              <label htmlFor={id}>
+                <span className={styles.Field___label}>{label}</span>
+              </label>
+            </>
+          )}
         </div>
       </div>
       <span

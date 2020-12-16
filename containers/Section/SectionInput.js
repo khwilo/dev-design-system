@@ -65,16 +65,22 @@ const SectionInput = () => (
 
     <SectionWrapper>
       <SectionContainer heading={'<Input size="sm" />'}>
-        <Input id='input12' size='sm' />
+        <Input id='input13' size='sm' />
       </SectionContainer>
       <SectionContainer heading={'<Input size="md" />'}>
-        <Input id='input13' size='md' />
+        <Input id='input14' size='md' />
       </SectionContainer>
     </SectionWrapper>
 
     <SectionWrapper>
       <SectionContainer heading={'<Input fullWidth />'}>
-        <Input id='input14' fullWidth />
+        <Input id='input15' fullWidth />
+      </SectionContainer>
+    </SectionWrapper>
+
+    <SectionWrapper>
+      <SectionContainer heading={'<Input multiline row="4" />'}>
+        <Input id='input16' multiline rows='4' />
       </SectionContainer>
     </SectionWrapper>
   </SectionContent>

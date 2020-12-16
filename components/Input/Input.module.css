@@ -24,6 +24,11 @@
   border-radius: 0.5rem;
 }
 
+.Field___controlMultiline {
+  width: auto;
+  height: auto;
+}
+
 .Field___controlSizeSmall {
   height: 2.4rem;
 }

@@ -45,7 +45,8 @@ li {
 }
 
 /* Override browser default style on focus */
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 
