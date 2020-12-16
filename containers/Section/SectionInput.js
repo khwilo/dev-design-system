@@ -1,17 +1,22 @@
 import Input from '../../components/Input';
-import SectionWrapper from './SectionWrapper';
 import SectionContainer from './SectionContainer';
+import SectionContent from './SectionContent';
+import SectionWrapper from './SectionWrapper';
 
 const SectionInput = () => (
-  <section className='section__content flow'>
-    <h2 className='section-heading1'>Inputs</h2>
-
+  <SectionContent contentTitle='Inputs'>
     <SectionWrapper>
-      <SectionContainer heading={''}>
-        <Input />
+      <SectionContainer heading={'<Input />'}>
+        <Input id='input1' />
+      </SectionContainer>
+      <SectionContainer heading={'&:hover'} faintHeading>
+        <Input id='input2' defaultHover />
+      </SectionContainer>
+      <SectionContainer heading={'&:focus'} faintHeading>
+        <Input id='input3' defaultFocus />
       </SectionContainer>
     </SectionWrapper>
-  </section>
+  </SectionContent>
 );
 
 export default SectionInput;

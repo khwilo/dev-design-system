@@ -1,0 +1,40 @@
+.field {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.field___label {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  color: #333333;
+}
+
+.field___control {
+  width: 12rem;
+  height: 3rem;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: var(--fw-medium);
+  font-size: 0.875rem;
+  padding: 0.5em 0.8em;
+  color: #828282;
+  border: 1px solid #828282;
+  border-radius: 0.5rem;
+}
+
+.defaultHover,
+.field___control:hover {
+  border: 1px solid #333333;
+}
+
+.defaultFocus,
+.field___control:focus {
+  border: 1px solid #2962ff;
+}
+
+.defaultFocus + label .field___label,
+.field___control:focus + label .field___label {
+  color: #2962ff;
+}

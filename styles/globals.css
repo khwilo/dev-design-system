@@ -44,6 +44,11 @@ li {
   list-style: none;
 }
 
+/* Override browser default style on focus */
+input:focus {
+  outline: none;
+}
+
 .logo {
   font-family: Poppins;
   font-weight: var(--fw-semi-bold);
