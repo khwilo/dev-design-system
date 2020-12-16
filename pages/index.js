@@ -8,7 +8,6 @@ export default function Home() {
     <div className='wrapper'>
       <Head>
         <title>Dev Challenges | Design System</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main className='main'>
