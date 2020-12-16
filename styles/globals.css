@@ -75,7 +75,7 @@ li {
   min-width: 22%;
 }
 
-.section-heading1 {
+.section__heading {
   font-family: 'Poppins', sans-serif;
   font-weight: var(--fw-medium);
   font-size: var(--fs-title);

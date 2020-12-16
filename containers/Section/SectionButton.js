@@ -1,11 +1,10 @@
 import Button from '../../components/Button';
 import SectionContainer from './SectionContainer';
 import SectionWrapper from './SectionWrapper';
+import SectionContent from './SectionContent';
 
 const SectionButton = () => (
-  <section className='section section--content flow'>
-    <h2 className='section-heading1'>Buttons</h2>
-
+  <SectionContent contentTitle='Buttons'>
     <SectionWrapper>
       <SectionContainer heading={'<Button />'}>
         <Button title='Default' />
@@ -112,7 +111,7 @@ const SectionButton = () => (
         <Button title='Default' color='danger' dangerHoverFocus />
       </SectionContainer>
     </SectionWrapper>
-  </section>
+  </SectionContent>
 );
 
 export default SectionButton;
