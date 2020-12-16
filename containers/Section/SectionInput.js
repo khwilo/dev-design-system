@@ -62,6 +62,15 @@ const SectionInput = () => (
         <Input id='input12' value='Text' />
       </SectionContainer>
     </SectionWrapper>
+
+    <SectionWrapper>
+      <SectionContainer heading={'<Input size="sm" />'}>
+        <Input id='input12' size='sm' />
+      </SectionContainer>
+      <SectionContainer heading={'<Input size="md" />'}>
+        <Input id='input13' size='md' />
+      </SectionContainer>
+    </SectionWrapper>
   </SectionContent>
 );
 

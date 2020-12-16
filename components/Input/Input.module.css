@@ -24,6 +24,14 @@
   border-radius: 0.5rem;
 }
 
+.Field___controlSizeSmall {
+  height: 2rem;
+}
+
+.Field___controlSizeMedium {
+  height: 3rem;
+}
+
 .Field___hint {
   font-family: Noto Sans JP;
   font-style: normal;

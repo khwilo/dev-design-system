@@ -11,20 +11,23 @@ const Input = ({
   startIcon,
   endIcon,
   value,
-  onChangeInputHandler = () => {},
+  size,
   disabled = false,
   label = 'Label',
   type = 'text',
   placeholder = 'Placeholder',
+  onChangeInputHandler = () => {},
   ...props
 }) => {
   const computedInputClassNames = cn(styles.Field___control, {
+    [styles.Field___controlSizeSmall]: size === 'sm',
+    [styles.Field___controlSizeMedium]: size === 'md',
+    [styles.Field___controlWithIconStart]: iconSrc && startIcon,
+    [styles.Field___controlWithIconEnd]: iconSrc && endIcon,
     [styles.Field___controlError]: error,
     [styles.defaultHover]: props.defaultHover,
     [styles.defaultFocus]: props.defaultFocus,
     [styles.errorHover]: props.errorHover,
-    [styles.Field___controlWithIconStart]: iconSrc && startIcon,
-    [styles.Field___controlWithIconEnd]: iconSrc && endIcon,
     [styles.Field___disabled]: disabled,
   });
 
