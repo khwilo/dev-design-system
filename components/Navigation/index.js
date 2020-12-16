@@ -1,27 +1,42 @@
-import Link from 'next/link';
+import React from 'react';
 
+import { SectionContext } from '../../context';
 import styles from './Navigation.module.css';
 
-const Navigation = () => (
-  <section className={styles.container}>
-    <h1 className='logo'>
-      <span style={{ color: '#F7542E' }}>Dev</span>challenges.io
-    </h1>
-    <nav className={styles.nav}>
-      <ul className={styles.nav___list}>
-        <li className={styles.nav___item}>
-          <Link href='#buttons'>
-            <a className={styles.nav___link}>Button</a>
-          </Link>
-        </li>
-        <li className={styles.nav___item}>
-          <Link href='#inputs'>
-            <a className={styles.nav___link}>Input</a>
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  </section>
-);
+const Navigation = () => {
+  const { currentSection, setCurrentSection } = React.useContext(
+    SectionContext
+  );
+
+  return (
+    <section className={styles.container}>
+      <h1 className='logo'>
+        <span style={{ color: '#F7542E' }}>Dev</span>challenges.io
+      </h1>
+      <nav className={styles.nav}>
+        <ul className={styles.nav___list}>
+          <li className={styles.nav___item}>
+            <a
+              className={styles.nav___link}
+              onClick={() => setCurrentSection(1)}
+              style={{ color: currentSection === 1 && '#090f31' }}
+            >
+              Button
+            </a>
+          </li>
+          <li className={styles.nav___item}>
+            <a
+              className={styles.nav___link}
+              onClick={() => setCurrentSection(2)}
+              style={{ color: currentSection === 2 && '#090f31' }}
+            >
+              Input
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  );
+};
 
 export default Navigation;

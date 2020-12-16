@@ -4,7 +4,7 @@ import SectionWrapper from './SectionWrapper';
 
 const SectionButton = () => (
   <section className='section__content flow'>
-    <h1 className='section-heading1'>Buttons</h1>
+    <h2 className='section-heading1'>Buttons</h2>
 
     <SectionWrapper>
       <SectionContainer heading={'<Button />'}>

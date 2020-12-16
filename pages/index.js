@@ -1,9 +1,13 @@
 import Head from 'next/head';
+import React from 'react';
 
 import Navigation from '../components/Navigation';
-import { SectionButton } from '../containers/Section';
+import { SectionButton, SectionInput } from '../containers/Section';
+import { SectionContext } from '../context';
 
 export default function Home() {
+  const { currentSection } = React.useContext(SectionContext);
+
   return (
     <div className='wrapper'>
       <Head>
@@ -13,7 +17,11 @@ export default function Home() {
       <main className='main'>
         <Navigation />
 
-        <SectionButton />
+        <div className='main__content'>
+          {currentSection === 1 ? <SectionButton /> : null}
+
+          {currentSection === 2 ? <SectionInput /> : null}
+        </div>
       </main>
     </div>
   );
