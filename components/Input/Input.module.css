@@ -24,17 +24,44 @@
   border-radius: 0.5rem;
 }
 
+.field___controlError {
+  border: 1px solid #d32f2f;
+}
+
+.field___controlError + label .field___label {
+  color: #d32f2f;
+}
+
+.errorLabel {
+  color: #333333;
+}
+
+.field___control:hover,
 .defaultHover,
-.field___control:hover {
+.errorHover {
   border: 1px solid #333333;
 }
 
-.defaultFocus,
-.field___control:focus {
+.field___controlError:hover + label .field___label,
+.defaultFocus:hover + label .field___label,
+.errorHover + label .field___label {
+  color: #333333;
+}
+
+.field___control:focus,
+.defaultFocus {
   border: 1px solid #2962ff;
 }
 
-.defaultFocus + label .field___label,
-.field___control:focus + label .field___label {
+.field___control:focus + label .field___label,
+.defaultFocus + label .field___label {
   color: #2962ff;
+}
+
+.field___controlError:focus {
+  border: 1px solid #d32f2f;
+}
+
+.field___controlError:focus + label .field___label {
+  color: #d32f2f;
 }

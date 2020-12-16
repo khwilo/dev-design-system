@@ -16,6 +16,18 @@ const SectionInput = () => (
         <Input id='input3' defaultFocus />
       </SectionContainer>
     </SectionWrapper>
+
+    <SectionWrapper>
+      <SectionContainer heading={'<Input error />'}>
+        <Input id='input1' error />
+      </SectionContainer>
+      <SectionContainer heading={'&:hover'} faintHeading>
+        <Input id='input2' error errorHover />
+      </SectionContainer>
+      <SectionContainer heading={'&:focus'} faintHeading>
+        <Input id='input3' error />
+      </SectionContainer>
+    </SectionWrapper>
   </SectionContent>
 );
 

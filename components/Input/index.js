@@ -5,14 +5,17 @@ import styles from './Input.module.css';
 const Input = ({
   id,
   name,
+  error,
   label = 'Label',
   type = 'text',
   placeholder = 'Placeholder',
   ...props
 }) => {
   const computedInputClassNames = cn(styles.field___control, {
+    [styles.field___controlError]: error,
     [styles.defaultHover]: props.defaultHover,
     [styles.defaultFocus]: props.defaultFocus,
+    [styles.errorHover]: props.errorHover,
   });
 
   return (
