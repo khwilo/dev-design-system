@@ -19,13 +19,19 @@ const SectionInput = () => (
 
     <SectionWrapper>
       <SectionContainer heading={'<Input error />'}>
-        <Input id='input1' error />
+        <Input id='input4' error />
       </SectionContainer>
       <SectionContainer heading={'&:hover'} faintHeading>
-        <Input id='input2' error errorHover />
+        <Input id='input5' error errorHover />
       </SectionContainer>
       <SectionContainer heading={'&:focus'} faintHeading>
-        <Input id='input3' error />
+        <Input id='input6' error />
+      </SectionContainer>
+    </SectionWrapper>
+
+    <SectionWrapper>
+      <SectionContainer heading={'<Input disabled />'}>
+        <Input id='input7' disabled />
       </SectionContainer>
     </SectionWrapper>
   </SectionContent>

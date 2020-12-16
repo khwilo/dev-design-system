@@ -6,20 +6,22 @@ const Input = ({
   id,
   name,
   error,
+  disabled = false,
   label = 'Label',
   type = 'text',
   placeholder = 'Placeholder',
   ...props
 }) => {
-  const computedInputClassNames = cn(styles.field___control, {
-    [styles.field___controlError]: error,
+  const computedInputClassNames = cn(styles.Field___control, {
+    [styles.Field___controlError]: error,
     [styles.defaultHover]: props.defaultHover,
     [styles.defaultFocus]: props.defaultFocus,
     [styles.errorHover]: props.errorHover,
+    [styles.Field___disabled]: disabled,
   });
 
   return (
-    <div className={styles.field}>
+    <div className={styles.Field}>
       <input
         className={computedInputClassNames}
         type={type}
@@ -28,7 +30,7 @@ const Input = ({
         placeholder={placeholder}
       />
       <label htmlFor={id}>
-        <span className={styles.field___label}>{label}</span>
+        <span className={styles.Field___label}>{label}</span>
       </label>
     </div>
   );

@@ -1,9 +1,9 @@
-.field {
+.Field {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.field___label {
+.Field___label {
   font-family: Noto Sans JP;
   font-style: normal;
   font-weight: normal;
@@ -11,7 +11,7 @@
   color: #333333;
 }
 
-.field___control {
+.Field___control {
   width: 12rem;
   height: 3rem;
   font-family: Noto Sans JP;
@@ -24,11 +24,11 @@
   border-radius: 0.5rem;
 }
 
-.field___controlError {
+.Field___controlError {
   border: 1px solid #d32f2f;
 }
 
-.field___controlError + label .field___label {
+.Field___controlError + label .Field___label {
   color: #d32f2f;
 }
 
@@ -36,32 +36,42 @@
   color: #333333;
 }
 
-.field___control:hover,
+.Field___control:hover,
 .defaultHover,
 .errorHover {
   border: 1px solid #333333;
 }
 
-.field___controlError:hover + label .field___label,
-.defaultFocus:hover + label .field___label,
-.errorHover + label .field___label {
+.Field___controlError:hover + label .Field___label,
+.defaultFocus:hover + label .Field___label,
+.errorHover + label .Field___label {
   color: #333333;
 }
 
-.field___control:focus,
+.Field___control:focus,
 .defaultFocus {
   border: 1px solid #2962ff;
 }
 
-.field___control:focus + label .field___label,
-.defaultFocus + label .field___label {
+.Field___control:focus + label .Field___label,
+.defaultFocus + label .Field___label {
   color: #2962ff;
 }
 
-.field___controlError:focus {
+.Field___controlError:focus {
   border: 1px solid #d32f2f;
 }
 
-.field___controlError:focus + label .field___label {
+.Field___controlError:focus + label .Field___label {
   color: #d32f2f;
+}
+
+.Field___disabled {
+  pointer-events: none;
+  background: #f2f2f2;
+  border: 1px solid #e0e0e0;
+}
+
+.Field___disabled:hover {
+  border: 1px solid #e0e0e0;
 }
